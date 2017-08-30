@@ -1,0 +1,19 @@
+{
+  "name": "disruptiveangels.com",
+  "version": "2.1.0",
+  "description": "Disruptive Angels Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aka-cronos/disruptiveangels.com.git"
+  },
+  "author": "Jorge Escamilla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aka-cronos/disruptiveangels.com/issues"
+  },
+  "homepage": "https://github.com/aka-cronos/disruptiveangels.com#readme"
+}
