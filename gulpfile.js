@@ -1,19 +1,20 @@
 // Dependencies.
+var autoprefixer    = require('autoprefixer');
+var browserSync     = require('browser-sync').create();
+var del             = require('del');
 var gulp            = require('gulp');
 var gutil           = require('gulp-util');
-var del             = require('del');
 var stylus          = require('gulp-stylus');
 var postcss         = require('gulp-postcss');
 var cssmin          = require('gulp-cssmin');
 var imagemin        = require('gulp-imagemin');
 var rename          = require('gulp-rename');
+var run             = require('gulp-run');
 var concat          = require('gulp-concat');
 var uglify          = require('gulp-uglify');
-var rupture         = require('rupture');
 var lost            = require('lost');
 var rucksack        = require('rucksack-css');
-var autoprefixer    = require('autoprefixer');
-var browserSync     = require('browser-sync').create();
+var rupture         = require('rupture');
 var reload          = browserSync.reload;
 
 // Include paths file.
@@ -54,7 +55,8 @@ gulp.task ('mincss', function() {
     .pipe(rename({
       suffix: '.min'
     }))
-    .pipe(gulp.dest(paths.jekyllCssDirr));
+    .pipe(gulp.dest(paths.jekyllCssDir))
+    .pipe(gulp.dest(paths.siteCssDir));
 });
 
 // Styles:watch Task - Reloads html files
@@ -80,7 +82,8 @@ gulp.task('uglify', function() {
     .pipe(rename({
       suffix: '.min'
     }))
-    .pipe(gulp.dest(paths.jekyllJsDir));
+    .pipe(gulp.dest(paths.jekyllJsDir))
+    .pipe(gulp.dest(paths.siteJsDir));
 });
 
 // Scripts:watch Task - Reloads html files
@@ -103,9 +106,15 @@ gulp.task('images', function() {
 gulp.task('build:jekyll', function() {
   var shellCommand = 'bundle exec jekyll build';
 
-  return gulp.src('')
+  return gulp.src('./')
     .pipe(run(shellCommand))
     .on('error', gutil.log);
+});
+
+// Scripts:watch Task - Reloads html files
+gulp.task('build:jekyll:watch', function(done){
+  browserSync.reload();
+  done();
 });
 
 // clean:jekyll - Deletes the entire _site directory.
@@ -114,32 +123,35 @@ gulp.task('clean:jekyll', function(callback) {
     callback();
 });
 
+// Develop Task
+gulp.task('jekyll:watch', gulp.series('build:jekyll', 'build:jekyll:watch'));
+
 // build:assets - Build assets parallel
 gulp.task('build:assets', gulp.parallel('styles', 'scripts'));
 
-// build - Builds site anew.
-gulp.task('build', gulp.series('clean:jekyll', 'build:assets', 'build:jekyll', 'build:jekyll:watch'));
-
-// build:jekyll:watch - Special tasks for building and then reloading BrowserSync.
-gulp.task('build:jekyll:watch', function(callback) {
-  .pipe(reload({ stream:true }));
-  callback();
-});
-
 // server task - Run server
-gulp.task('server', ['build'], function() {
+gulp.task('server', function() {
   browserSync.init({
     server: paths.siteDir,
     port: 3000,
     browser: "google chrome"
   });
 
-  gulp.watch(paths.jekyllCongif, gulp.series('build'));
-  gulp.watch(paths.mdPattern, gulp.series('build'));
-  gulp.watch(paths.imgPattern, gulp.series('images', 'build'));
-  gulp.watch(paths.stylusPattern, gulp.series('build'));
-  gulp.watch(paths.scriptsPattern, gulp.series('build'));
+  gulp.watch(paths.jekyllCongif, gulp.series('jekyll:watch'));          // Watch _config.yml
+  gulp.watch(paths.jekyllPages, gulp.series('jekyll:watch'));           // Watch root pages
+  gulp.watch(paths.jekyllIncludes, gulp.series('jekyll:watch'));        // Watch _includes
+  gulp.watch(paths.jekyllLayouts, gulp.series('jekyll:watch'));         // Watch _layouts
+  gulp.watch(paths.jekyllPosts, gulp.series('jekyll:watch'));           // Watch _posts
+  gulp.watch(paths.stylusPattern, gulp.series('styles'));               // Watch styles
+  gulp.watch(paths.scriptsPattern, gulp.series('scripts'));             // Watch scripts
+  gulp.watch(paths.imgPattern, gulp.series('images', 'jekyll:watch'));  // Watch images
 });
 
-// Default Task: builds site.
-gulp.task('default', ['server']);
+// build - Builds site anew.
+gulp.task('build', gulp.series('clean:jekyll', 'build:assets', 'build:jekyll'));
+
+// Develop Task
+gulp.task('develop', gulp.series('build', 'server'));
+
+// Develop Task
+gulp.task('default', gulp.series('develop'));
