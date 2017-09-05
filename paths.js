@@ -4,7 +4,7 @@ var paths = {};
 paths.htmlPattern       = './*.html';
 paths.mdPattern         = './**/*.+(md|MD|markdown|MARKDOWN)';
 paths.stylusPattern     = './_assets/stylus/**/*.styl';
-paths.imgPattern        = './_assets/img/**/*.{JPG,jpg,png,gif}';
+paths.imgPattern        = './_assets/img/**/*.{JPG,jpg,png,gif,svg}';
 paths.scriptsPattern    = './_assets/js/**/*.js';
 
 // Assets Files

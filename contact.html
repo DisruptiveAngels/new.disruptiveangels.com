@@ -2,5 +2,29 @@
 layout: page
 title: Contact
 ---
-<h1>Contact</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta repudiandae, voluptatibus eveniet dolores, dolore libero necessitatibus. Repudiandae voluptatibus aspernatur, aliquid!</p>
+<section class="contact">
+  <h2 class="title">Hello there!</h2>
+  <p class="sub-title__main">We love to sharing and discussing ideas, please get in touch!</p>
+
+  <div class="form-message form-message--error"></div>
+
+
+  <form  class="form form--contact" onsubmit="return sendEmail()">
+    <div class="form-inputContainer">
+      <label class="form-label" for="name">Full Name</label>
+      <input class="form-input" type="text" name="name" id="name" placeholder="Full name">
+    </div>
+
+    <div class="form-inputContainer">
+      <label class="form-label" for="mail">Email</label>
+      <input class="form-input" type="mail" name="mail" id="mail" placeholder="Work email" required>
+    </div>
+
+    <div class="form-inputContainer">
+      <label class="form-label" for="message">Message</label>
+      <textarea class="form-input" name="message" id="message" placeholder="Message" cols="30" rows="5"></textarea>
+    </div>
+
+    <input class="btn btn__principal" type="submit" value="Send">
+  </form>
+</section>

@@ -70,7 +70,7 @@ gulp.task('styles', gulp.series('stylus', 'postcss', 'mincss', 'styles:watch'));
 
 // concatjs - Concatenates *.js files.
 gulp.task ('concatjs', function() {
-  return gulp.src([paths.jsVendorsDir, paths.jsModulesDir])
+  return gulp.src(paths.scriptsPattern)
     .pipe(concat('app.js'))
     .pipe(gulp.dest(paths.assetsDir));
 });
@@ -127,7 +127,7 @@ gulp.task('clean:jekyll', function(callback) {
 gulp.task('jekyll:watch', gulp.series('build:jekyll', 'build:jekyll:watch'));
 
 // build:assets - Build assets parallel
-gulp.task('build:assets', gulp.parallel('styles', 'scripts'));
+gulp.task('build:assets', gulp.parallel('styles', 'scripts', 'images'));
 
 // server task - Run server
 gulp.task('server', function() {
