@@ -3,5 +3,41 @@ layout: page
 title: Blog
 permalink: /blog/
 ---
-<h1>Blog</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic ipsa iste repellendus, quo dolorum libero amet dolor eveniet quidem cupiditate.</p>
+<main class="featuredPost">
+  <h3 class="title__main">Popular posts</h3>
+
+  <div class="separator"></div>
+
+  {% for post in site.categories.featured limit: 6 %}
+    <a href="{{ post.url }}" class="post post--popular" style="background-image: url('/assets/img/{{ post.image }}');">
+      <div class="post-info">
+        <span class="post-date">{{ post.date | date: "%-d %B %Y" }}</span>
+        <span class="post-readTime">16 min</span>
+      </div>
+      
+      <h2 class="post-title">{{ post.title }}</h2>
+    </a>
+  {% endfor %}
+  
+</main>
+
+<section class="postContainer">
+  <h3 class="title">Last posts</h3>
+
+  <div class="separator"></div>
+
+  {% for post in site.posts %}
+    <a href="{{ post.url }}" class="post">
+      <div class="post-info">
+        <span class="post-date">{{ post.date | date: "%-d %B %Y" }}</span>
+        <span class="post-infoSeparator"></span>
+        <span class="post-readTime">16 min</span>
+      </div>
+      
+      <h2 class="post-title">{{ post.title }}</h2>
+      <p class="text">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
+    </a>
+  {% endfor %}
+
+  <!-- <a class="btn" href="#0">Load more</a> -->
+</section>

@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Test post 2"
 excerpt: Test de excerpt :)
-date:   2017-08-30 17:28:43 -0500
+date:   2017-08-2 17:28:43 -0500
 categories: jekyll update
 image: article-home.jpg
 ---

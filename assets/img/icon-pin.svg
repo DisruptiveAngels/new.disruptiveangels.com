@@ -1,14 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="29px" viewBox="0 0 24 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
-    <title>Combined Shape</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Map" transform="translate(-676.000000, -458.000000)" fill="#0B2B43">
-            <g id="Group-3" transform="translate(472.000000, 256.000000)">
-                <path d="M224.485281,222.485281 L216,230.970563 L207.514719,222.485281 C202.828427,217.79899 202.828427,210.20101 207.514719,205.514719 C212.20101,200.828427 219.79899,200.828427 224.485281,205.514719 C229.171573,210.20101 229.171573,217.79899 224.485281,222.485281 Z M216,220.4 C219.534622,220.4 222.4,217.534622 222.4,214 C222.4,210.465378 219.534622,207.6 216,207.6 C212.465378,207.6 209.6,210.465378 209.6,214 C209.6,217.534622 212.465378,220.4 216,220.4 Z" id="Combined-Shape"></path>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg width="24" height="29" viewBox="0 0 24 29" xmlns="http://www.w3.org/2000/svg"><title>Combined Shape</title><path d="M20.485 20.485L12 28.971l-8.485-8.486c-4.687-4.686-4.687-12.284 0-16.97 4.686-4.687 12.284-4.687 16.97 0 4.687 4.686 4.687 12.284 0 16.97zM12 18.4a6.4 6.4 0 1 0 0-12.8 6.4 6.4 0 0 0 0 12.8z" fill="#0B2B43" fill-rule="evenodd"/></svg>
