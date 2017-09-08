@@ -9,7 +9,7 @@ permalink: /blog/
   <div class="separator"></div>
 
   {% for post in site.categories.featured limit: 6 %}
-    <a href="{{ post.url }}" class="post post--popular" style="background-image: url('/assets/img/{{ post.image }}');">
+    <a href="{{ post.url }}" class="post post--popular" style="background-image: url('/assets/img/{{ post.featuredImage }}');">
       <div class="post-info">
         <span class="post-date">{{ post.date | date: "%-d %B %Y" }}</span>
         <span class="post-readTime">16 min</span>

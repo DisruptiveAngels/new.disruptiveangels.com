@@ -26,9 +26,9 @@ paths.jsModulesDir      = './_assets/js/modules/';
 paths.jekyllCssDir      = './assets/css/';
 paths.jekyllImgDir      = './assets/img/';
 paths.jekyllJsDir       = './assets/js/';
-paths.jekyllIncludesDir = './_includes';
-paths.jekylllayoutsDir  = './_layouts';
-paths.jekyllPostsDir    = './_posts';
+paths.jekyllIncludesDir = './_includes/';
+paths.jekylllayoutsDir  = './_layouts/';
+paths.jekyllPostsDir    = './_posts/';
 
 // Jekyll _site Directory
 paths.siteDir           = './_site/';
