@@ -13,19 +13,19 @@ Leif Ericksen, Director Industrial de GE-Digital, en su exposición en uno de lo
 **CTO** *(Chief Technology Officer)*, está enfocado al rol de adopción y operación de las nuevas tecnologías dentro del modus vivendi de la organización.
 
 <figure class="article-image">
-  <img src="{{ site.url }}/assets/img/posts/2017-08-15-cto.png" alt="Empresa Maquinas">
+  <img src="{{ site.url }}/assets/img/posts/2017-08-15-cto.jpg" alt="Empresa Maquinas">
 </figure>
 
 **CIO** *(Chief Information Officer)*, está enfocado al análisis de la información para mantener un orden en el manejo de costos.
 
 <figure class="article-image">
-  <img src="{{ site.url }}/assets/img/posts/2017-08-15-cio.png" alt="Empresa Maquinas">
+  <img src="{{ site.url }}/assets/img/posts/2017-08-15-cio.jpg" alt="Empresa Maquinas">
 </figure>
 
 **CDO** *(Chief Data Officer)*, está enfocado a la correcta generación, almacenamiento, uso y cuestiones legales de los datos que genera y con los que interactúa la empresa.
 
 <figure class="article-image">
-  <img src="{{ site.url }}/assets/img/posts/2017-08-15-cdo.png" alt="Empresa Maquinas">
+  <img src="{{ site.url }}/assets/img/posts/2017-08-15-cdo.jpg" alt="Empresa Maquinas">
 </figure>
 
 

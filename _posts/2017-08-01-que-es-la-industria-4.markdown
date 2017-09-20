@@ -21,7 +21,7 @@ Para evitar confusiones y con el fin de manejar un concepto claro y consiso, la 
 4. **Fábricas inteligentes y la manufactura aditiva** - La integración de los tres puntos anteriores en cualquier ámbito de los negocios así como la capacidad de crear productos de forma unitaria y de forma industrial.
 
 <figure class="article-image">
-  <img src="{{ site.url }}/assets/img/posts/2017-08-1-cabezales.png" alt="Cabezales">
+  <img src="{{ site.url }}/assets/img/posts/2017-08-1-cabezales.jpg" alt="Cabezales">
   <figcaption>Cabezales de proyecto</figcaption>
 </figure>
 

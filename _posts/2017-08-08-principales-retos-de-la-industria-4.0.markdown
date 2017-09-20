@@ -4,12 +4,12 @@ title:  "Principales Retos de la Industria 4.0"
 excerpt: La cuarta revolución industrial está amenazando con un fuerte cambio en la forma de hacer, planear y ejecutar los procesos productivos.
 date:   2017-08-8  17:28:43 -0500
 categories: jekyll industry4.0 featured
-featuredImage: 2017-08-8-principales-retos-de-la-industria-4-0.png
+featuredImage: 2017-08-8-principales-retos-de-la-industria-4-0.jpg
 ---
 Cualquier cambio radical de paradigma en los sectores productivos representa un desliz fundamental de *modus-operandi*, la cuarta revolución industrial está amenazando con un fuerte cambio en la forma de hacer, planear y ejecutar los procesos productivos. De igual forma representará un paraguas para una transformación radical en los modelos de negocios de los sectores industriales.
 
 <figure class="article-image">
-  <img src="{{ site.url }}/assets/img/posts/2017-08-8-empresa-maquinas.png" alt="Empresa Maquinas">
+  <img src="{{ site.url }}/assets/img/posts/2017-08-8-empresa-maquinas.jpg" alt="Empresa Maquinas">
   <figcaption>Empresa Maquinas</figcaption>
 </figure>
 

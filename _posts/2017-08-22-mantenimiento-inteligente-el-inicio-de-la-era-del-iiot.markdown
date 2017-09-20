@@ -24,7 +24,7 @@ Una vez que se tiene el modelo entrenado y la maquinaria o equipo con los sensor
 El siguiente paso en la evolución de la inteligencia en materia de mantenimiento es el mantenimiento prescriptivo, un punto de sofisticación de la maquinaría en el que los sonsores y software embebido permite la automatización del mantenimiento de los equipos.
 
 <figure class="article-image">
-  <img src="{{ site.url }}/assets/img/posts/2017-08-22-proceso.png" alt="Proceso">
+  <img src="{{ site.url }}/assets/img/posts/2017-08-22-proceso.jpg" alt="Proceso">
   <figcaption>Proceso evolutivo.</figcaption>
 </figure>
 
