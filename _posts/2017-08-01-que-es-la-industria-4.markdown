@@ -11,7 +11,7 @@ Durante los últimos meses, se ha puesto de moda en los ámbitos industriales el
 Para evitar confusiones y con el fin de manejar un concepto claro y consiso, la industria 4.0 es: "La completa digitalización de las cadenas de valor a través de la integración de tecnologías de procesamiento de datos, software inteligente y sensores; desde los proveedores hasta los clientes para poder predecir, controlar, planear y producir de forma inteligente, lo que genera mayor valor a toda la cadena".
 
 <figure class="article-image">
-  <img src="{{ site.url }}/assets/img/posts/2017-08-1-que-es-la-industria-4.jpg" alt="Cabezales">
+  <img src="/assets/img/posts/2017-08-1-que-es-la-industria-4.jpg" alt="Cabezales">
   <figcaption>Industria 4.0</figcaption>
 </figure>
 
@@ -26,7 +26,7 @@ Para evitar confusiones y con el fin de manejar un concepto claro y consiso, la 
 4. **Fábricas inteligentes y la manufactura aditiva** - La integración de los tres puntos anteriores en cualquier ámbito de los negocios así como la capacidad de crear productos de forma unitaria y de forma industrial.
 
 <figure class="article-image">
-  <img src="{{ site.url }}/assets/img/posts/2017-08-1-cabezales.jpg" alt="Cabezales">
+  <img src="/assets/img/posts/2017-08-1-cabezales.jpg" alt="Cabezales">
   <figcaption>Cabezales de proyecto</figcaption>
 </figure>
 

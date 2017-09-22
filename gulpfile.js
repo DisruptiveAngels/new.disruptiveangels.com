@@ -95,12 +95,21 @@ gulp.task('scripts:watch', function(){
 // scripts - Run scripts tasks.
 gulp.task('scripts', gulp.series('concatjs', 'uglify', 'scripts:watch'));
 
+// clean:images - Deletes images.
+gulp.task('clean:images', function(callback) {
+    del(['assets/img/*']);
+    callback();
+});
+
 // images - Optimize images.
-gulp.task('images', function() {
+gulp.task('imagemin', function() {
   return gulp.src(paths.imgPattern)
     .pipe(imagemin())
     .pipe(gulp.dest(paths.jekyllImgDir));
 });
+
+// Images - Run images tasks.
+gulp.task('images', gulp.series('clean:images', 'imagemin'));
 
 // build:jekyll - Runs jekyll build command.
 gulp.task('build:jekyll', function() {
@@ -124,7 +133,7 @@ gulp.task('clean:jekyll', function(callback) {
 });
 
 // Develop Task
-gulp.task('jekyll:watch', gulp.series('build:jekyll', 'build:jekyll:watch'));
+gulp.task('jekyll:watch', gulp.series('clean:jekyll', 'build:jekyll', 'build:jekyll:watch'));
 
 // build:assets - Build assets parallel
 gulp.task('build:assets', gulp.parallel('styles', 'scripts', 'images'));
@@ -148,7 +157,7 @@ gulp.task('server', function() {
 });
 
 // build - Builds site anew.
-gulp.task('build', gulp.series('clean:jekyll', 'build:assets', 'build:jekyll'));
+gulp.task('build', gulp.series('clean:jekyll', 'clean:images', 'build:assets', 'build:jekyll'));
 
 // Develop Task
 gulp.task('develop', gulp.series('build', 'server'));

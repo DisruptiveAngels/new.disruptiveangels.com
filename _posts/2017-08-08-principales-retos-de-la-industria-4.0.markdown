@@ -9,7 +9,7 @@ featuredImage: 2017-08-8-principales-retos-de-la-industria-4-0.jpg
 Cualquier cambio radical de paradigma en los sectores productivos representa un desliz fundamental de *modus-operandi*, la cuarta revolución industrial está amenazando con un fuerte cambio en la forma de hacer, planear y ejecutar los procesos productivos. De igual forma representará un paraguas para una transformación radical en los modelos de negocios de los sectores industriales.
 
 <figure class="article-image">
-  <img src="{{ site.url }}/assets/img/posts/2017-08-8-empresa-maquinas.jpg" alt="Empresa Maquinas">
+  <img src="/assets/img/posts/2017-08-8-empresa-maquinas.jpg" alt="Empresa Maquinas">
   <figcaption>Empresa Maquinas</figcaption>
 </figure>
 
@@ -26,7 +26,7 @@ Debido a lo anterior, así como al rechazo natural a lo desconocido, y en genera
 Actualmente, dicha cantidad (y magnitud) de responsabilidades deja de hacer sentido que esté en una persona. Las organizaciones más avanzadas están dividiendo los roles relevantes en tecnología en tres o más puestos. Nacerán puestos completamente nuevos como Abogado de datos, ingeniero en infraestructura de la fábrica digital, entre muchos otros. [Aquí][mit-jobs] puedes ver un ejemplo del MIT acerca de los puestos que se detonarán con la evolución y adopción de la inteligancia artificial.
 
 <figure class="article-image">
-  <img src="{{ site.url }}/assets/img/posts/2017-08-8-ai.jpg" alt="AI">
+  <img src="/assets/img/posts/2017-08-8-ai.jpg" alt="AI">
   <figcaption>AI</figcaption>
 </figure>
 
