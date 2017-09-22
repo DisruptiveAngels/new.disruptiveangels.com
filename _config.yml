@@ -3,7 +3,7 @@ email: cronos@disruptiveangels.com
 description: > # this means to ignore newlines until "baseurl:"
   Our Open Innovation Processes in collaboration with large companies, help us develop new ideas and fundamentals for the creations of new tech startups
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://da.akacronos.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://disruptiveangels.com/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: DisruptiveAngel
 github_username:  DisruptiveAngels
 permalink: /blog/:title.html
