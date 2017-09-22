@@ -1,0 +1,74 @@
+.post
+  width calc(50% - .5rem)
+  display flex
+  flex-direction column
+  min-height 200px
+  text-decoration none
+  padding 2rem
+  border-radius 5px
+  margin-bottom 1rem
+  border 1px solid transparent
+  transition 250ms all ease-in-out
+  
+  &:hover
+    border 1px solid rgba($secondary, .5)
+    
+.post-date,
+.post-readTime
+  text-transform uppercase
+  color rgba($secondary, .5)
+  letter-spacing .25rem
+  
+.post-info
+  display flex
+  margin-bottom auto
+  align-items center
+  
+.post-infoSeparator
+  width 2px
+  height 1rem
+  margin-right 1rem
+  margin-left 1rem
+  background-color rgba($secondary, .5)
+
+.post-title
+  font-size 1.5rem
+  color $dark-blue
+  font-family 'velino', serif
+  font-weight normal
+  margin 2rem 0 .5rem 0
+
+.post--popular
+  position relative
+  min-height 350px
+  border 0
+  padding 2rem 4rem
+  background-repeat no-repeat
+  background-position center
+  background-size cover
+  
+  &:before
+    content ''
+    position absolute
+    top 0
+    right 0
+    bottom 0
+    left 0
+    background linear-gradient(rgba(11, 43, 67, .6) 0, rgba(10, 42, 67, 1) 100%)
+    border-radius 5px
+  
+  &:hover
+    border 0
+    
+  .post-date
+  .post-readTime
+  .post-title
+    color white
+    z-index 10
+    
+  .post-title
+    font-size 2rem
+    
+  .post-info
+    display flex
+    justify-content space-between

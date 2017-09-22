@@ -1,0 +1,32 @@
+.clients-logos
+  display flex
+  flex-wrap wrap
+  margin-top 4rem
+  width 100%
+  justify-content center
+  
+  +below(48rem)
+    wrapped(90%)
+
+  a
+    lost-column 1/5 flex
+    padding .5rem
+    margin-bottom 2rem
+    border-radius 4px
+    transition 350ms all ease-in-out
+    
+    +below(48rem)
+      display block
+      margin-bottom 1.5rem
+      lost-column 1/2 flex
+
+    img
+      display block
+      max-height 70px
+      width auto
+      margin-left auto
+      margin-right auto
+
+  a:hover
+  .selected
+    shadow()

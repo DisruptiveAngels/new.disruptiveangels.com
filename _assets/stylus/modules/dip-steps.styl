@@ -1,0 +1,39 @@
+.steps-container
+  wrapped()
+  
+  :nth-child(even) .dip-step--image
+    order 1
+
+  :nth-child(even) .dip-step--info
+    order 2
+
+.dip-step
+  display flex
+  align-items center
+  justify-content center
+  margin-bottom 8rem
+  
+  &--info
+    
+    +below(40rem)
+      wrapped(90%)
+      text-align center
+    
+    +above(40rem)
+      lost-column 6/12 0 0
+      lost-offset .5/12
+    
+    .title
+      margin-bottom 1rem
+  
+  &--image
+    shadow()
+    overflow hidden
+    border-radius 4px
+    lost-column 4/12 0 0
+    
+    +below(38rem)
+      display none
+    
+    img
+      display block

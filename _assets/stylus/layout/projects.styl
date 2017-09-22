@@ -1,0 +1,23 @@
+.header-image--startups
+  background url('/img/startups-main.jpg') center no-repeat
+  background-size cover
+    
+.startups-container
+  margin-bottom 6rem
+  wrapped()
+  
+  +below(64rem)
+    wrapped(90%)
+  
+  h3
+    @extend $text-center
+  
+  :nth-child(even) .startup--info
+    order 2
+    
+    &:before
+      right 0
+      left -5rem
+    
+  :nth-child(even) .startup--image
+    order 1

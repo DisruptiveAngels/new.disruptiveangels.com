@@ -1,0 +1,161 @@
+.home-main
+  wrapped()
+  display flex
+  height 100vh
+  justify-content center
+  align-items center
+  background url('/assets/img/main-bg.jpg') center no-repeat
+  background-size cover
+  text-align center
+  
+  .text-container
+    width 100%
+    
+    +below(48rem)
+      wrapped(90%)
+      width 100%
+
+  .title__main
+  .sub-title__main
+    @extend $text-white
+    
+.home-about
+  display flex
+  align-items center
+  min-height 80vh
+  wrapped-left()
+  
+  +below(48rem)
+    flex-direction column
+    padding-top 6rem
+    padding-bottom 6rem
+  
+  .text-container
+    
+    +above(48rem)
+      lost-column 5/12
+
+    +below(48rem)
+      wrapped(90%)
+
+  figure
+    
+    +above(48rem)
+      lost-column 1/2
+    
+.home-services
+  display flex
+  
+  +below(48rem)
+    flex-direction column
+  
+  .title-tag
+    color white
+    
+  &--description
+    wrapped(70%)
+    font-family 'velino', serif
+    margin-top 0
+    margin-bottom 0
+    font-size 1.75rem
+    line-height 1.5
+
+.home-startups
+.home-dips
+  position relative
+  display flex
+  flex-direction column
+  justify-content center
+  overflow hidden
+  min-height 400px
+  text-decoration none
+  @extend $text-center
+  @extend $text-white
+  transition 500ms all ease-in-out
+  
+  +above(48rem)
+    width 50%
+
+  &::before
+    position absolute
+    top -2rem
+    right -2rem
+    bottom -2rem
+    left -2rem
+    border 2px solid white
+    content ''
+    transition inherit
+    
+  &:hover::before
+    top 2rem
+    right 2rem
+    bottom 2rem
+    left 2rem
+
+.home-startups
+  background url('/assets/img/home-startups.jpg') center no-repeat
+  background-size cover
+    
+.home-dips
+  background url('/assets/img/home-dips.jpg') center no-repeat
+  background-size cover
+  
+.home-testimonies
+  padding-top 8rem
+  padding-bottom 6rem
+  wrapped()
+
+  .title
+    @extend $text-center
+
+.home-direction
+  display flex
+  padding-top 6rem
+  padding-bottom 6rem
+  background url('/assets/img/home-direction.jpg') center no-repeat
+  background-size cover
+  flex-direction column
+  @extend $text-center
+  wrapped()
+  
+  .title
+  .text
+  .title-tag
+    @extend $text-white
+    
+  .title-tag
+    margin-bottom 1rem
+    
+  &-cities
+    display flex
+    justify-content space-around
+    
+    +below(50rem)
+      flex-direction column
+      
+.direction-city
+  +below(50rem)
+    & + &
+      margin-top 4rem
+
+.home-press
+  margin-top 8rem
+  margin-bottom 8rem
+  wrapped()
+  text-align center
+  
+.text-container
+  +below(48rem)
+    wrapped(90%)
+    
+.contact
+  flex-direction column
+  max-width 550px
+  padding 4rem
+  text-align center
+  
+  .title
+    margin-bottom 0
+  
+  +below(55rem)
+    padding 7rem 1rem

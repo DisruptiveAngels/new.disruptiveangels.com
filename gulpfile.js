@@ -7,7 +7,7 @@ var gutil           = require('gulp-util');
 var stylus          = require('gulp-stylus');
 var postcss         = require('gulp-postcss');
 var cssmin          = require('gulp-cssmin');
-var imagemin        = require('gulp-imagemin');
+var imageOptim      = require('gulp-imageoptim');
 var rename          = require('gulp-rename');
 var run             = require('gulp-run');
 var concat          = require('gulp-concat');
@@ -102,14 +102,14 @@ gulp.task('clean:images', function(callback) {
 });
 
 // images - Optimize images.
-gulp.task('imagemin', function() {
+gulp.task('imageOptim', function() {
   return gulp.src(paths.imgPattern)
-    .pipe(imagemin())
+    .pipe(imageOptim.optimize())
     .pipe(gulp.dest(paths.jekyllImgDir));
 });
 
 // Images - Run images tasks.
-gulp.task('images', gulp.series('clean:images', 'imagemin'));
+gulp.task('images', gulp.series('clean:images', 'imageOptim'));
 
 // build:jekyll - Runs jekyll build command.
 gulp.task('build:jekyll', function() {
