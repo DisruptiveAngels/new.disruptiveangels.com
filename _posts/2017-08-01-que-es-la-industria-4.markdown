@@ -8,7 +8,12 @@ featuredImage: 2017-08-1-que-es-la-industria-4.jpg
 ---
 Durante los últimos meses, se ha puesto de moda en los ámbitos industriales el término **Industria 4.0**, adoptado primero en Alemania como una de las iniciativas estratégicas del gobierno teutón **[Industrie 4.0][industria4.0]**. Actualmente, muchas organizaciones están viendo este tema como prioridad en la evolución de las estrategias e inclusive modelos de negocio. Se le bautizó de esta manera dado que hace referencia a que estamos viviendo, la cuarta revolución industrial.
 
-Para evitar confusiones y con el fin de manejar un concepto claro y consiso, la industria 4.0 es: "La completa digitalización de las cadenas de valor a través de la integración de tecnologías de procesamiento de datos, software inteligente y sensores; desde los proveedores hasta los clientes para poder predecir, controlar, planear y producir de forma inteligente, lo que genera mayor valor a toda la cadena."
+Para evitar confusiones y con el fin de manejar un concepto claro y consiso, la industria 4.0 es: "La completa digitalización de las cadenas de valor a través de la integración de tecnologías de procesamiento de datos, software inteligente y sensores; desde los proveedores hasta los clientes para poder predecir, controlar, planear y producir de forma inteligente, lo que genera mayor valor a toda la cadena".
+
+<figure class="article-image">
+  <img src="{{ site.url }}/assets/img/posts/2017-08-1-que-es-la-industria-4.jpg" alt="Cabezales">
+  <figcaption>Industria 4.0</figcaption>
+</figure>
 
 ¿Qué componentes tecnológicos involucra la industria 4.0? Resulta prácticamente imposible describir (Y poner de acuerdo a todo mundo en definir) absolutamente todas las tecnologías que caben dentro de los conceptos de 4.0. Para lo anterior, es mejor hablar de cuatro componentes tecnológicos que engloban a éstas:
 
