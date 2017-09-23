@@ -23,11 +23,11 @@ var paths = require('./paths');
 // stylus - Compiles stylus file.
 gulp.task('stylus', function() {
   var stylus_options = {
-    use : [     
+    use : [
         rupture()
     ]
   }
-  
+
   return gulp.src(paths.stylusAppFile)
     .pipe(stylus(stylus_options))
     .pipe(gulp.dest(paths.assetsDir));
@@ -162,5 +162,5 @@ gulp.task('build', gulp.series('clean:jekyll', 'clean:images', 'build:assets', '
 // Develop Task
 gulp.task('develop', gulp.series('build', 'server'));
 
-// Develop Task
+// Default Task
 gulp.task('default', gulp.series('develop'));
