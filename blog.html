@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Blog
+title: Disruptive Angels - Blog
+excerpt: Todo lo que hay que saber acerca de la Industria 4.0
 permalink: /blog/
 ---
 <main class="featuredPost">
@@ -13,11 +14,11 @@ permalink: /blog/
       <div class="post-info">
         <span class="post-date">{{ post.date | date: "%-d %B %Y" }}</span>
       </div>
-      
+
       <h2 class="post-title">{{ post.title }}</h2>
     </a>
   {% endfor %}
-  
+
 </main>
 
 <section class="postContainer">
@@ -30,7 +31,7 @@ permalink: /blog/
       <div class="post-info">
         <span class="post-date">{{ post.date | date: "%-d %B %Y" }}</span>
       </div>
-      
+
       <h2 class="post-title">{{ post.title }}</h2>
       <p class="text">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</p>
     </a>
