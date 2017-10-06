@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Principales Retos de la Industria 4.0"
-excerpt: La cuarta revolución industrial está amenazando con un fuerte cambio en la forma de hacer, planear y ejecutar los procesos productivos.
+title:  "Retos de la Industria 4.0"
+excerpt: Bienvenidos a la cuarta revolución industrial. Cónoce los retos ambientales, culturales y organizacionales que se requieren para el progreso de las industrias.
 date:   2017-08-8  17:28:43 -0500
 categories: jekyll industry4.0 featured
 featuredImage: 2017-08-8-principales-retos-de-la-industria-4-0.jpg

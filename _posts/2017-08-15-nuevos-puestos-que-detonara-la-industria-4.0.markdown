@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Los nuevos puestos que detonará la Industria 4.0"
-excerpt: Con la Cuarta Revolución Industrial llegan una serie de responsabilidades y tareas que estarán adquiriendo un rol fundamental.
+title:  "Los puestos que detonará la Industria 4.0"
+excerpt: Bienvenidos a la cuarta revolución industrial. Cónoce los talentos, habilidades y puestos que se estarán requiriendo por el uso de alta tecnología.
 date:   2017-08-15  17:28:43 -0500
 categories: jekyll industry4.0 featured
 featuredImage: 2017-08-15-nuevos-puestos-que-detonara-la-industria-4.0.jpg
@@ -31,7 +31,7 @@ Leif Ericksen, Director Industrial de GE-Digital, en su exposición en uno de lo
 
 *Las personas no representan los puestos reales en GE.*
 
-La ruptura de un puesto (CTO) en 3 (CTO-CIO-CDO) hace referencia a cuestiones de tecnología en general, información y datos en general. De igual manera, el internet de las cosas, la inteligencia artificial, la manufactura aditiva y todos los componentes tecnológicos detonarán puestos aún difíciles de entender. 
+La ruptura de un puesto (CTO) en 3 (CTO-CIO-CDO) hace referencia a cuestiones de tecnología en general, información y datos en general. De igual manera, el internet de las cosas, la inteligencia artificial, la manufactura aditiva y todos los componentes tecnológicos detonarán puestos aún difíciles de entender.
 
 Roles cómo:
 

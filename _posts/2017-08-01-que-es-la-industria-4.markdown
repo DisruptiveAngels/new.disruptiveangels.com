@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "¿Qué es la Industria 4.0?"
-excerpt: Actualmente, muchas organizaciones están viendo este tema como prioridad en la evolución de las estrategias e inclusive modelos de negocio.
+excerpt: Bienvenidos a la cuarta revolución industrial. Cónoce los principios, significado y tecnologías del futuro en las industrias.
 date:   2017-08-1 17:28:43 -0500
 categories: jekyll industry4.0 featured
 featuredImage: 2017-08-1-que-es-la-industria-4.jpg
