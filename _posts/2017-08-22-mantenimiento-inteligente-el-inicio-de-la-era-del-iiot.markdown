@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Mantenimiento Inteligente - El inicio de la era del IIOT"
-excerpt: Uno de los conceptos que más han generado expectativa es el Mantenimiento Inteligente de las máquinas y productos.
+title:  "Mantenimiento Inteligente y Predictivo"
+excerpt: Bienvenidos a la cuarta revolución industrial. Cónoce las nuevas tecnologías para el enfoque industrial, sus conceptos y sus procesos evolutivos.
 date:   2017-08-15  17:28:43 -0500
 categories: jekyll industry4.0 featured
 featuredImage: 2017-08-22-mantenimiento-inteligente-el-inicio-de-la-era-del-iiot.jpg
